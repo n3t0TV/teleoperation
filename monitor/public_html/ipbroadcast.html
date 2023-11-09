@@ -1,0 +1,87 @@
+
+<html>
+    <head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    </head>
+    <p>Group broadcast</p>
+    
+    
+    
+    
+    <body>
+    
+    
+    
+    </body>
+    <script>
+        
+			 if (navigator.appName.indexOf("Microsoft Internet Explorer") != -1)
+			 {
+				document.open();
+			document.write('<object classid="clsid:42B182F9-3F08-484E-9913-07193A5D36A5" codebase="WebClientPlus.ocx#version=3,0,7,1" id="DHiMPlayer" align="absbottom" viewastext>');
+				document.write('<p align="left" style="font-size:14px">');
+				document.write('&nbsp;&nbsp;&nbsp;&nbsp;<span id="t5">' + str_noins0 + '</span><br>');
+			document.write(' <span id="t6">' + str_noins1 + '<br>' + str_noins2 + '<br>' + str_noins3 + '<br><br>' + str_noins4 + '</span><a href="http://p2pip.net/ClientPlus_Setup.exe" id="t7">' + str_noins5 + '</a>');
+			document.write(' <span id="t8">' + str_noins6 + '</span> <b id="t9">' + str_noins7 + '</b> <span id="t10">' + str_noins8 + '</span></p>');						
+				document.write('<param name="_Version" value="65536"> <param name="_ExtentX" value="10954"> <param name="_ExtentY" value="6826">');
+				document.write('<param name="_StockProps" value="0">');
+				document.write('<embed src="65536" _version="65536" _extentx="10954" _extenty="6826" _stockprops="0" align="center" height="0" width="0"> </object>');
+				document.close();
+			}
+			else
+			{
+				w=parseInt(width_1);
+				h=parseInt(height_1);
+				
+				if (h == 720)
+				{
+					w=800;
+					h=450;
+				}
+				else
+				if (h == 960)
+				{
+					w=800;
+					h=600;
+				}
+				else 
+				if (h == 1080)
+				{
+					w=960;
+					h=540;
+				}
+				else 
+				if (h == 1296)
+				{
+					w=960;
+					h=540;
+				}
+				else 
+				if (h == 1440)
+				{
+					w=1024;
+					h=576;
+				}
+				else 
+				if (h == 1920)
+				{
+					w=1024;
+					h=768;
+				}
+				
+				document.open();
+				document.write('<div><canvas id="video_cavas" width=' + w + ' height=' + h + '></canvas></div>');
+				document.close();
+			}
+	
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/lib/video-stream-merger.js"></script>
+    <script src="//sdk.twilio.com/js/video/releases/2.17.1/twilio-video.min.js"></script>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="js/twilioSandbox/ipcamera.js"></script>
+    
+    </html>
+
+    
